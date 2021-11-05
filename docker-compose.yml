@@ -7,7 +7,8 @@ services:
     container_name: nifi
     restart: always
     ports:
-      - 8080:8080
+      - 8080:
+      - 8433:8433
     
   nifi-registry:
     image: apache/nifi-registry:latest
